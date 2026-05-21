@@ -29,8 +29,8 @@ def logout(request):
     
 
 # * Czy endpoint powinien wymagać **`IsAuthenticated`**?
-# Access Token wygasa szybciej Refresh Token co moze spowodować, ze uzytkownik nie bedzie mogl sie zalogowac bo bez access tokena IsAuthenticated nie przepuści i wywali błąd.
-# Jest to dodatkowa warstwa zabezpieczenia więc edpoint moze wymagać IsAuthenticated ale nie musi.
+# Access Token wygasa szybciej niz Refresh Token co moze spowodować, ze uzytkownik nie bedzie mogl sie zalogowac bo bez access tokena IsAuthenticated nie przepuści i wywali błąd.
+# Jest to dodatkowa warstwa zabezpieczenia więc endpoint moze wymagać IsAuthenticated ale nie musi.
    
 # * Co w logach chcesz zapisać (bezpieczeństwo vs. PII)?
 # Odp. Nie mozna logować wrazliwych danych takich jak tokeny, dane osobowe, hasła. Można logować informacje o błędach, adresy IP, 
